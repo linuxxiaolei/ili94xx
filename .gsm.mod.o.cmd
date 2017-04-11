@@ -1,7 +1,7 @@
-cmd_/mnt/hgfs/linux_share/ssd1963/gsm.mod.o := arm-linux-gcc -Wp,-MD,/mnt/hgfs/linux_share/ssd1963/.gsm.mod.o.d  -nostdinc -isystem /opt/EmbedSky/4.3.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/opt/EmbedSky/linux-2.6.30.4/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-s3c2410/include -Iarch/arm/mach-s3c2400/include -Iarch/arm/mach-s3c2412/include -Iarch/arm/mach-s3c2440/include -Iarch/arm/mach-s3c2442/include -Iarch/arm/mach-s3c2443/include -Iarch/arm/plat-s3c24xx/include -Iarch/arm/plat-s3c/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -fno-delete-null-pointer-checks -O2 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=4 -march=armv4t -mtune=arm9tdmi -msoft-float -Uarm -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(gsm.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(gsm)"  -DMODULE -c -o /mnt/hgfs/linux_share/ssd1963/gsm.mod.o /mnt/hgfs/linux_share/ssd1963/gsm.mod.c
+cmd_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.mod.o := arm-linux-gcc -Wp,-MD,/mnt/hgfs/linux_share/ssd1963/ili94xx/.gsm.mod.o.d  -nostdinc -isystem /opt/EmbedSky/4.3.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/opt/EmbedSky/linux-2.6.30.4/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-s3c2410/include -Iarch/arm/mach-s3c2400/include -Iarch/arm/mach-s3c2412/include -Iarch/arm/mach-s3c2440/include -Iarch/arm/mach-s3c2442/include -Iarch/arm/mach-s3c2443/include -Iarch/arm/plat-s3c24xx/include -Iarch/arm/plat-s3c/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -fno-delete-null-pointer-checks -O2 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=4 -march=armv4t -mtune=arm9tdmi -msoft-float -Uarm -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(gsm.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(gsm)"  -DMODULE -c -o /mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.mod.o /mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.mod.c
 
-deps_/mnt/hgfs/linux_share/ssd1963/gsm.mod.o := \
-  /mnt/hgfs/linux_share/ssd1963/gsm.mod.c \
+deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.mod.o := \
+  /mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.mod.c \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
@@ -298,6 +298,6 @@ deps_/mnt/hgfs/linux_share/ssd1963/gsm.mod.o := \
   include/linux/vermagic.h \
   include/linux/utsrelease.h \
 
-/mnt/hgfs/linux_share/ssd1963/gsm.mod.o: $(deps_/mnt/hgfs/linux_share/ssd1963/gsm.mod.o)
+/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.mod.o: $(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.mod.o)
 
-$(deps_/mnt/hgfs/linux_share/ssd1963/gsm.mod.o):
+$(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.mod.o):

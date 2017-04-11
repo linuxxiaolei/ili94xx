@@ -439,7 +439,7 @@ static struct platform_device  s3c_device_ili93xx = {
         .platform_data = &s3c_ili93xx_platdata,
     },
 };
-#endif
+#else
 static struct platform_device  s3c_device_ili93xx = {
     .name       = "ili9418",
     .id         = 0,
@@ -447,6 +447,8 @@ static struct platform_device  s3c_device_ili93xx = {
         .platform_data = &s3c_ili93xx_platdata,
     },
 };
+
+#endif
 
 static int __init ili94xx_init(void)
 {

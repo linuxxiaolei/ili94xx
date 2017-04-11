@@ -1,7 +1,8 @@
-cmd_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.o := arm-linux-gcc -Wp,-MD,/mnt/hgfs/linux_share/ssd1963/ili94xx/.gsm.o.d  -nostdinc -isystem /opt/EmbedSky/4.3.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/opt/EmbedSky/linux-2.6.30.4/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-s3c2410/include -Iarch/arm/mach-s3c2400/include -Iarch/arm/mach-s3c2412/include -Iarch/arm/mach-s3c2440/include -Iarch/arm/mach-s3c2442/include -Iarch/arm/mach-s3c2443/include -Iarch/arm/plat-s3c24xx/include -Iarch/arm/plat-s3c/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -fno-delete-null-pointer-checks -O2 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=4 -march=armv4t -mtune=arm9tdmi -msoft-float -Uarm -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow  -DMODULE -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(gsm)"  -D"KBUILD_MODNAME=KBUILD_STR(gsm)"  -c -o /mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.o /mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.c
+cmd_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.mod.o := arm-linux-gcc -Wp,-MD,/mnt/hgfs/linux_share/ssd1963/ili94xx/.ili9418.mod.o.d  -nostdinc -isystem /opt/EmbedSky/4.3.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/opt/EmbedSky/linux-2.6.30.4/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-s3c2410/include -Iarch/arm/mach-s3c2400/include -Iarch/arm/mach-s3c2412/include -Iarch/arm/mach-s3c2440/include -Iarch/arm/mach-s3c2442/include -Iarch/arm/mach-s3c2443/include -Iarch/arm/plat-s3c24xx/include -Iarch/arm/plat-s3c/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -fno-delete-null-pointer-checks -O2 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=4 -march=armv4t -mtune=arm9tdmi -msoft-float -Uarm -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(ili9418.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(ili9418)"  -DMODULE -c -o /mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.mod.o /mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.mod.c
 
-deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.o := \
-  /mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.c \
+deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.mod.o := \
+  /mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.mod.c \
+    $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
@@ -11,7 +12,6 @@ deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.o := \
     $(wildcard include/config/markers.h) \
     $(wildcard include/config/tracepoints.h) \
     $(wildcard include/config/tracing.h) \
-    $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/sysfs.h) \
   include/linux/list.h \
@@ -295,200 +295,9 @@ deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.o := \
   include/linux/percpu-defs.h \
   /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/module.h \
     $(wildcard include/config/arm/unwind.h) \
-  include/linux/fb.h \
-    $(wildcard include/config/fb/backlight.h) \
-    $(wildcard include/config/fb/deferred/io.h) \
-    $(wildcard include/config/fb/tileblitting.h) \
-    $(wildcard include/config/fb/foreign/endian.h) \
-    $(wildcard include/config/fb/both/endian.h) \
-    $(wildcard include/config/fb/big/endian.h) \
-    $(wildcard include/config/fb/little/endian.h) \
-  include/linux/i2c.h \
-    $(wildcard include/config/i2c/boardinfo.h) \
-  include/linux/i2c-id.h \
-  include/linux/mod_devicetable.h \
-  include/linux/device.h \
-    $(wildcard include/config/debug/devres.h) \
-  include/linux/ioport.h \
-  include/linux/klist.h \
-  include/linux/pm.h \
-    $(wildcard include/config/pm/sleep.h) \
-  include/linux/semaphore.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/device.h \
-    $(wildcard include/config/dmabounce.h) \
-  include/linux/pm_wakeup.h \
-    $(wildcard include/config/pm.h) \
-  include/linux/sched.h \
-    $(wildcard include/config/sched/debug.h) \
-    $(wildcard include/config/detect/softlockup.h) \
-    $(wildcard include/config/detect/hung/task.h) \
-    $(wildcard include/config/core/dump/default/elf/headers.h) \
-    $(wildcard include/config/bsd/process/acct.h) \
-    $(wildcard include/config/taskstats.h) \
-    $(wildcard include/config/audit.h) \
-    $(wildcard include/config/inotify/user.h) \
-    $(wildcard include/config/epoll.h) \
-    $(wildcard include/config/posix/mqueue.h) \
-    $(wildcard include/config/keys.h) \
-    $(wildcard include/config/user/sched.h) \
-    $(wildcard include/config/schedstats.h) \
-    $(wildcard include/config/task/delay/acct.h) \
-    $(wildcard include/config/fair/group/sched.h) \
-    $(wildcard include/config/rt/group/sched.h) \
-    $(wildcard include/config/blk/dev/io/trace.h) \
-    $(wildcard include/config/x86/ptrace/bts.h) \
-    $(wildcard include/config/sysvipc.h) \
-    $(wildcard include/config/auditsyscall.h) \
-    $(wildcard include/config/rt/mutexes.h) \
-    $(wildcard include/config/task/xacct.h) \
-    $(wildcard include/config/cpusets.h) \
-    $(wildcard include/config/cgroups.h) \
-    $(wildcard include/config/futex.h) \
-    $(wildcard include/config/fault/injection.h) \
-    $(wildcard include/config/latencytop.h) \
-    $(wildcard include/config/function/graph/tracer.h) \
-    $(wildcard include/config/have/unstable/sched/clock.h) \
-    $(wildcard include/config/debug/stack/usage.h) \
-    $(wildcard include/config/preempt/bkl.h) \
-    $(wildcard include/config/group/sched.h) \
-    $(wildcard include/config/mm/owner.h) \
-  include/linux/capability.h \
-    $(wildcard include/config/security/file/capabilities.h) \
-  include/linux/rbtree.h \
-  include/linux/mm_types.h \
-    $(wildcard include/config/split/ptlock/cpus.h) \
-    $(wildcard include/config/want/page/debug/flags.h) \
-    $(wildcard include/config/proc/fs.h) \
-    $(wildcard include/config/mmu/notifier.h) \
-  include/linux/auxvec.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/auxvec.h \
-  include/linux/prio_tree.h \
-  include/linux/page-debug-flags.h \
-    $(wildcard include/config/page/poisoning.h) \
-    $(wildcard include/config/page/debug/something/else.h) \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/mmu.h \
-    $(wildcard include/config/cpu/has/asid.h) \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/cputime.h \
-  include/asm-generic/cputime.h \
-  include/linux/sem.h \
-  include/linux/ipc.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/ipcbuf.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/sembuf.h \
-  include/linux/signal.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/signal.h \
-  include/asm-generic/signal.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/sigcontext.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/siginfo.h \
-  include/asm-generic/siginfo.h \
-  include/linux/path.h \
-  include/linux/pid.h \
-  include/linux/proportions.h \
-  include/linux/percpu_counter.h \
-  include/linux/seccomp.h \
-    $(wildcard include/config/seccomp.h) \
-  include/linux/rtmutex.h \
-    $(wildcard include/config/debug/rt/mutexes.h) \
-  include/linux/plist.h \
-    $(wildcard include/config/debug/pi/list.h) \
-  include/linux/resource.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/resource.h \
-  include/asm-generic/resource.h \
-  include/linux/hrtimer.h \
-    $(wildcard include/config/high/res/timers.h) \
-  include/linux/task_io_accounting.h \
-    $(wildcard include/config/task/io/accounting.h) \
-  include/linux/latencytop.h \
-  include/linux/cred.h \
-    $(wildcard include/config/security.h) \
-  include/linux/key.h \
-    $(wildcard include/config/sysctl.h) \
-  include/linux/sysctl.h \
-  include/linux/aio.h \
-    $(wildcard include/config/aio.h) \
-  include/linux/aio_abi.h \
-  include/linux/uio.h \
-  include/linux/fs.h \
-    $(wildcard include/config/dnotify.h) \
-    $(wildcard include/config/quota.h) \
-    $(wildcard include/config/inotify.h) \
-    $(wildcard include/config/debug/writecount.h) \
-    $(wildcard include/config/file/locking.h) \
-    $(wildcard include/config/block.h) \
-    $(wildcard include/config/fs/xip.h) \
-    $(wildcard include/config/migration.h) \
-  include/linux/limits.h \
-  include/linux/ioctl.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/ioctl.h \
-  include/asm-generic/ioctl.h \
-  include/linux/kdev_t.h \
-  include/linux/dcache.h \
-  include/linux/rculist.h \
-  include/linux/radix-tree.h \
-  include/linux/fiemap.h \
-  include/linux/quota.h \
-  include/linux/dqblk_xfs.h \
-  include/linux/dqblk_v1.h \
-  include/linux/dqblk_v2.h \
-  include/linux/dqblk_qtree.h \
-  include/linux/nfs_fs_i.h \
-  include/linux/nfs.h \
-  include/linux/sunrpc/msg_prot.h \
-  include/linux/fcntl.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/fcntl.h \
-  include/asm-generic/fcntl.h \
-  include/linux/err.h \
-  include/linux/backlight.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/io.h \
-  arch/arm/mach-s3c2410/include/mach/io.h \
-  arch/arm/mach-s3c2410/include/mach/hardware.h \
-    $(wildcard include/config/cpu/s3c2400.h) \
-    $(wildcard include/config/cpu/s3c2440.h) \
-    $(wildcard include/config/cpu/s3c2412.h) \
-    $(wildcard include/config/no/multiword/io.h) \
-  arch/arm/mach-s3c2410/include/mach/map.h \
-  arch/arm/plat-s3c/include/plat/map-base.h \
-  arch/arm/plat-s3c24xx/include/plat/map.h \
-    $(wildcard include/config/cpu/s3c2413.h) \
-    $(wildcard include/config/cpu/s3c2412/only.h) \
-  include/linux/platform_device.h \
-  include/linux/clk.h \
-  include/linux/console.h \
-    $(wildcard include/config/vga/console.h) \
-  include/linux/io.h \
-    $(wildcard include/config/has/ioport.h) \
-  include/linux/delay.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/delay.h \
-  include/linux/gpio.h \
-    $(wildcard include/config/generic/gpio.h) \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/gpio.h \
-  arch/arm/mach-s3c2410/include/mach/gpio.h \
-    $(wildcard include/config/s3c24xx/gpio/extra.h) \
-  include/asm-generic/gpio.h \
-    $(wildcard include/config/gpiolib.h) \
-    $(wildcard include/config/gpio/sysfs.h) \
-    $(wildcard include/config/have/gpio/lib.h) \
-  arch/arm/mach-s3c2410/include/mach/gpio-nrs.h \
-  arch/arm/mach-s3c2410/include/mach/regs-mem.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/mach/irq.h \
-  include/linux/irq.h \
-    $(wildcard include/config/s390.h) \
-    $(wildcard include/config/irq/per/cpu.h) \
-    $(wildcard include/config/irq/release/method.h) \
-    $(wildcard include/config/intr/remap.h) \
-    $(wildcard include/config/generic/pending/irq.h) \
-    $(wildcard include/config/sparse/irq.h) \
-    $(wildcard include/config/numa/migrate/irq/desc.h) \
-    $(wildcard include/config/generic/hardirqs/no//do/irq.h) \
-    $(wildcard include/config/cpumasks/offstack.h) \
-  include/linux/irqreturn.h \
-  include/linux/irqnr.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/irq.h \
-  arch/arm/mach-s3c2410/include/mach/irqs.h \
-    $(wildcard include/config/cpu/s3c2443.h) \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/irq_regs.h \
-  include/asm-generic/irq_regs.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/hw_irq.h \
+  include/linux/vermagic.h \
+  include/linux/utsrelease.h \
 
-/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.o: $(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.o)
+/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.mod.o: $(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.mod.o)
 
-$(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/gsm.o):
+$(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.mod.o):
