@@ -1,7 +1,7 @@
-cmd_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o := arm-linux-gcc -Wp,-MD,/mnt/hgfs/linux_share/ssd1963/ili94xx/.ili9418.o.d  -nostdinc -isystem /opt/EmbedSky/4.3.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/opt/EmbedSky/linux-2.6.30.4/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-s3c2410/include -Iarch/arm/mach-s3c2400/include -Iarch/arm/mach-s3c2412/include -Iarch/arm/mach-s3c2440/include -Iarch/arm/mach-s3c2442/include -Iarch/arm/mach-s3c2443/include -Iarch/arm/plat-s3c24xx/include -Iarch/arm/plat-s3c/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -fno-delete-null-pointer-checks -O2 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=4 -march=armv4t -mtune=arm9tdmi -msoft-float -Uarm -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow  -DMODULE -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(ili9418)"  -D"KBUILD_MODNAME=KBUILD_STR(ili9418)"  -c -o /mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o /mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.c
+cmd_/mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488_dev.o := arm-linux-gcc -Wp,-MD,/mnt/hgfs/linux_share/ssd1963/ili94xx/dev/.ili9488_dev.o.d  -nostdinc -isystem /opt/EmbedSky/4.3.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/opt/EmbedSky/linux-2.6.30.4/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-s3c2410/include -Iarch/arm/mach-s3c2400/include -Iarch/arm/mach-s3c2412/include -Iarch/arm/mach-s3c2440/include -Iarch/arm/mach-s3c2442/include -Iarch/arm/mach-s3c2443/include -Iarch/arm/plat-s3c24xx/include -Iarch/arm/plat-s3c/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -fno-delete-null-pointer-checks -O2 -marm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=4 -march=armv4t -mtune=arm9tdmi -msoft-float -Uarm -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow  -DMODULE -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(ili9488_dev)"  -D"KBUILD_MODNAME=KBUILD_STR(ili9488_dev)"  -c -o /mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488_dev.o /mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488_dev.c
 
-deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o := \
-  /mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.c \
+deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488_dev.o := \
+  /mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488_dev.c \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
@@ -455,7 +455,10 @@ deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o := \
   include/linux/console.h \
     $(wildcard include/config/vga/console.h) \
   /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/uaccess.h \
-  include/linux/vmalloc.h \
+  include/linux/io.h \
+    $(wildcard include/config/has/ioport.h) \
+  include/linux/delay.h \
+  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/delay.h \
   include/linux/gpio.h \
     $(wildcard include/config/generic/gpio.h) \
   /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/gpio.h \
@@ -466,69 +469,10 @@ deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o := \
     $(wildcard include/config/gpio/sysfs.h) \
     $(wildcard include/config/have/gpio/lib.h) \
   arch/arm/mach-s3c2410/include/mach/gpio-nrs.h \
-  include/linux/delay.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/delay.h \
-  include/linux/uaccess.h \
-  include/linux/dma-mapping.h \
-    $(wildcard include/config/has/dma.h) \
-    $(wildcard include/config/have/dma/attrs.h) \
-  include/linux/dma-attrs.h \
-  include/linux/bug.h \
-  include/linux/scatterlist.h \
-    $(wildcard include/config/debug/sg.h) \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/scatterlist.h \
-  include/linux/mm.h \
-    $(wildcard include/config/stack/growsup.h) \
-    $(wildcard include/config/swap.h) \
-    $(wildcard include/config/shmem.h) \
-    $(wildcard include/config/debug/pagealloc.h) \
-    $(wildcard include/config/hibernation.h) \
-  include/linux/mmdebug.h \
-    $(wildcard include/config/debug/vm.h) \
-    $(wildcard include/config/debug/virtual.h) \
-  include/linux/debug_locks.h \
-    $(wildcard include/config/debug/locking/api/selftests.h) \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/pgtable.h \
-  include/asm-generic/4level-fixup.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/proc-fns.h \
-    $(wildcard include/config/cpu/32.h) \
-    $(wildcard include/config/cpu/arm7tdmi.h) \
-    $(wildcard include/config/cpu/arm720t.h) \
-    $(wildcard include/config/cpu/arm740t.h) \
-    $(wildcard include/config/cpu/arm9tdmi.h) \
-    $(wildcard include/config/cpu/arm920t.h) \
-    $(wildcard include/config/cpu/arm922t.h) \
-    $(wildcard include/config/cpu/arm925t.h) \
-    $(wildcard include/config/cpu/arm926t.h) \
-    $(wildcard include/config/cpu/arm940t.h) \
-    $(wildcard include/config/cpu/arm946e.h) \
-    $(wildcard include/config/cpu/arm1020.h) \
-    $(wildcard include/config/cpu/arm1020e.h) \
-    $(wildcard include/config/cpu/arm1022.h) \
-    $(wildcard include/config/cpu/arm1026.h) \
-    $(wildcard include/config/cpu/mohawk.h) \
-    $(wildcard include/config/cpu/feroceon.h) \
-    $(wildcard include/config/cpu/v6.h) \
-    $(wildcard include/config/cpu/v7.h) \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/cpu-single.h \
-  arch/arm/plat-s3c/include/mach/vmalloc.h \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/pgtable-hwdef.h \
-  include/asm-generic/pgtable.h \
-  include/linux/page-flags.h \
-    $(wildcard include/config/pageflags/extended.h) \
-    $(wildcard include/config/have/mlocked/page/bit.h) \
-    $(wildcard include/config/ia64/uncached/allocator.h) \
-    $(wildcard include/config/s390.h) \
-  include/linux/vmstat.h \
-    $(wildcard include/config/vm/event/counters.h) \
-  /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/dma-mapping.h \
-  include/asm-generic/dma-coherent.h \
-    $(wildcard include/config/have/generic/dma/coherent.h) \
-  include/linux/io.h \
-    $(wildcard include/config/has/ioport.h) \
   arch/arm/mach-s3c2410/include/mach/regs-mem.h \
   /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/mach/irq.h \
   include/linux/irq.h \
+    $(wildcard include/config/s390.h) \
     $(wildcard include/config/irq/per/cpu.h) \
     $(wildcard include/config/irq/release/method.h) \
     $(wildcard include/config/intr/remap.h) \
@@ -545,8 +489,8 @@ deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o := \
   /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/irq_regs.h \
   include/asm-generic/irq_regs.h \
   /opt/EmbedSky/linux-2.6.30.4/arch/arm/include/asm/hw_irq.h \
-  /mnt/hgfs/linux_share/ssd1963/ili94xx/ili9488.h \
+  /mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488.h \
 
-/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o: $(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o)
+/mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488_dev.o: $(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488_dev.o)
 
-$(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/ili9418.o):
+$(deps_/mnt/hgfs/linux_share/ssd1963/ili94xx/dev/ili9488_dev.o):
